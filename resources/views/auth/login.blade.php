@@ -1,12 +1,12 @@
 <x-guest-layout>
 
-    <x-jet-authentication-card>
+    <x-authentication-card>
 
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <x-authentication-card-logo />
         </x-slot>
 
-        <x-jet-validation-errors class="mb-4" />
+        <x-validation-errors class="mb-4" />
 
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">
@@ -19,19 +19,19 @@
 
             <div class="relative w-full mb-3">
                 <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="grid-password">Email</label>
-                <x-jet-input id="email" class="block mt-1 w-full text-gray-700" type="email" name="email" :value="old('email')" required autofocus />
+                <x-input id="email" class="block mt-1 w-full text-gray-700" type="email" name="email" :value="old('email')" required autofocus />
             </div>
 
             <div class="relative w-full mb-3">
                 <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="grid-password">Password</label>
-                <x-jet-input id="password" class="block mt-1 w-full text-gray-700" type="password" name="password" required autocomplete="current-password" />
+                <x-input id="password" class="block mt-1 w-full text-gray-700" type="password" name="password" required autocomplete="current-password" />
             </div>
 
             <div class="grid grid-cols-1 justify-items-center sm:grid-cols-2 sm:justify-items-stretch my-5">
                 <div class="justify-self-start">
                     <label class="inline-flex items-center cursor-pointer">
 
-                        <x-jet-checkbox id="remember_me" name="remember" />
+                        <x-checkbox id="remember_me" name="remember" />
                         
                         <span class="ml-2 text-sm font-semibold text-gray-700">
                             Recuérdame
@@ -51,15 +51,15 @@
 
             <div class="text-center mt-6">
            
-                <x-jet-button>
+                <x-button>
                     {{ __('Entrar') }}
-                </x-jet-button>
+                </x-button>
             </div>
 
             
 
         </form>
      
-    </x-jet-authentication-card>
+    </x-authentication-card>
 
 </x-guest-layout>
