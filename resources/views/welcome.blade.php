@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <!-- LANDING DE MOVIL-->
-    <div class="lg:hidden">
+    <div class="lg:hidden overflow-hidden">
 
         <!-- DEGRADES -->
         <div class="absolute h-full inset-0 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent z-10"></div>
