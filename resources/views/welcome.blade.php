@@ -1,5 +1,5 @@
 <x-guest-layout>
-
+    
     <!-- LANDING DE MOVIL-->
     <div class="lg:hidden container overflow-hidden">
 

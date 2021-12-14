@@ -21,9 +21,18 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="bg-zinc-900">
+    <body class="bg-zinc-900" x-data="setup()" x-init="$refs.loading.classList.add('hidden');" >
+        <div
+            x-ref="loading"
+            class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-indigo-800"
+        >
+            Loading.....
+        </div>
+
         <div class="font-sans text-gray-900 antialiased overflow-hidden">
             {{ $slot }}
         </div>
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
     </body>
 </html>
