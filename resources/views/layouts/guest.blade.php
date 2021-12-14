@@ -21,7 +21,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body>
+    <body class="bg-zinc-900">
         <div class="font-sans text-gray-900 antialiased overflow-hidden">
             {{ $slot }}
         </div>
