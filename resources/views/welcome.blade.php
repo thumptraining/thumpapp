@@ -39,7 +39,7 @@
             </div>
 
         </div>
-    
+    </div>
     <!-- LANDING PC  -->
     <div class="hidden lg:block">
         <div class="w-full h-screen flex">
