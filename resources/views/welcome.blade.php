@@ -1,43 +1,44 @@
 <x-guest-layout>
 
     <!-- LANDING DE MOVIL-->
-    <div class="lg:hidden overflow-hidden">
-        <div class="flex items-stretch">
-            
-            <!-- DEGRADES -->
-            <div class="absolute h-full inset-0 z-10 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
+    <div class="lg:hidden">
 
-            <!-- IMAGEN DE FONDO -->
-            <img class="absolute inset-0 transform w-full object-cover h-full object-top" src="{{asset('img/welcome/mobile/2.png')}}" style="filter: grayscale(0);" />
-    
-            <div class="flex-1 self-end z-50  mx-auto ">
+        <!-- DEGRADES -->
+        <div class="absolute h-full inset-0 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent z-10"></div>
+
+        <!-- IMAGEN DE FONDO -->
+        <img class="absolute inset-0 transform w-full object-cover h-full object-top" src="{{asset('img/welcome/mobile/2.png')}}" style="filter: grayscale(0);" />
+
+        <div class=" grid grid-cols-1 gap-4 content-end h-screen">
+
+            <div class="z-20">
                 <!-- LOGO -->
-                <img class="w-24 h-24 md:w-40 md:h-40 mx-auto mb-5" src="{{asset('img/logo.png')}}"  />
+                 <img class="w-24 h-24 md:w-40 md:h-40 mx-auto mb-5" src="{{asset('img/logo.png')}}"  />
+            </div>
 
+            <div class="z-20">
                 <h1 class="text-white text-4xl text-center font-title font-bold px-5">Es tiempo de superarte</h1>
                 <p class="text-white text-center font-body px-5 text-sm mb-5">No pierdas tiempo con desplazamiento, esperando maquinas en el gimnasio y entrena de forma eficiente</p>
+            </div>
 
-                <!-- BOTONES DE INGRESO -->
-                <div class="mt-2 mb-10 px-5">
-                    @if (Route::has('login'))
-                
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="btn btn-block btn-info">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="btn btn-block btn-accent mb-2">Entrar</a>
-    
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="btn btn-block btn-secondary">Registrarse</a>
-                        @endif
-                    @endauth
-                
+            <!-- BOTONES DE INGRESO -->
+            <div class="mt-2 mb-10 px-5 z-20">
+                @if (Route::has('login'))
+            
+                @auth
+                    <a href="{{ url('/dashboard') }}" class="btn btn-block btn-info">Dashboard</a>
+                @else
+                    <a href="{{ route('login') }}" class="btn btn-block btn-accent mb-2">Entrar</a>
+
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="btn btn-block btn-secondary">Registrarse</a>
                     @endif
-                </div>
-
-            </div> 
+                @endauth
+            
+                @endif
+            </div>
 
         </div>
-    </div>
     
     <!-- LANDING PC  -->
     <div class="hidden lg:block">
