@@ -2,7 +2,7 @@
 
     <!-- LANDING DE MOVIL-->
     <div class="lg:hidden">
-        <div class="flex items-stretch h-screen overflow-hidden">
+        <div class="flex items-stretch h-screen">
             
             <!-- DEGRADES -->
             <div class="absolute h-full inset-0 z-10 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
