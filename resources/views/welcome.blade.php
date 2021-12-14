@@ -1,8 +1,8 @@
 <x-guest-layout>
 
     <!-- LANDING DE MOVIL-->
-    <div class="lg:hidden">
-        <div class="flex items-stretch h-screen">
+    <div class="lg:hidden overflow-hidden">
+        <div class="flex items-stretch">
             
             <!-- DEGRADES -->
             <div class="absolute h-full inset-0 z-10 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
