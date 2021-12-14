@@ -4,10 +4,10 @@
     <div class="lg:hidden overflow-hidden">
 
         <!-- DEGRADES -->
-        <div class="absolute h-full inset-0 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent z-10"></div>
+        <div class="absolute inset-0 transition ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent z-10"></div>
 
         <!-- IMAGEN DE FONDO -->
-        <img class="absolute inset-0 transform w-full object-cover h-full object-top" src="{{asset('img/welcome/mobile/2.png')}}" style="filter: grayscale(0);" />
+        <img class="absolute inset-0 transform w-full object-cover object-top" src="{{asset('img/welcome/mobile/2.png')}}" style="filter: grayscale(0);" />
 
         <div class=" grid grid-cols-1 gap-4 content-end h-screen">
 
