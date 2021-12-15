@@ -24,7 +24,7 @@
     <body class="bg-zinc-900" x-data="setup()" x-init="$refs.loading.classList.add('hidden');" >
         <div
             x-ref="loading"
-            class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-indigo-800"
+            class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-slate-900"
         >
             Loading.....
         </div>
