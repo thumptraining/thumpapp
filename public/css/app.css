@@ -1779,6 +1779,9 @@ html {
 .w-24 {
 	width: 6rem;
 }
+.w-16 {
+	width: 4rem;
+}
 .min-w-0 {
 	min-width: 0px;
 }
@@ -2049,6 +2052,10 @@ html {
 .bg-gray-900 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+.bg-gray-800 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
 .bg-opacity-25 {
 	--tw-bg-opacity: 0.25;
@@ -2327,6 +2334,10 @@ html {
 	--tw-text-opacity: 1;
 	color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
+.text-indigo-600 {
+	--tw-text-opacity: 1;
+	color: rgba(79, 70, 229, var(--tw-text-opacity));
+}
 .underline {
 	text-decoration: underline;
 }
@@ -2446,6 +2457,10 @@ html {
 	--tw-bg-opacity: 1;
 	background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
+.hover\:bg-gray-700:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
 .hover\:text-gray-500:hover {
 	--tw-text-opacity: 1;
 	color: rgba(107, 114, 128, var(--tw-text-opacity));
@@ -2484,6 +2499,14 @@ html {
 .focus\:border-gray-300:focus {
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+.focus\:border-gray-900:focus {
+	--tw-border-opacity: 1;
+	border-color: rgba(17, 24, 39, var(--tw-border-opacity));
+}
+.focus\:border-indigo-300:focus {
+	--tw-border-opacity: 1;
+	border-color: rgba(165, 180, 252, var(--tw-border-opacity));
 }
 .focus\:bg-indigo-600:focus {
 	--tw-bg-opacity: 1;
@@ -2538,6 +2561,17 @@ html {
 	--tw-ring-opacity: 1;
 	--tw-ring-color: rgba(191, 219, 254, var(--tw-ring-opacity));
 }
+.focus\:ring-gray-300:focus {
+	--tw-ring-opacity: 1;
+	--tw-ring-color: rgba(209, 213, 219, var(--tw-ring-opacity));
+}
+.focus\:ring-indigo-200:focus {
+	--tw-ring-opacity: 1;
+	--tw-ring-color: rgba(199, 210, 254, var(--tw-ring-opacity));
+}
+.focus\:ring-opacity-50:focus {
+	--tw-ring-opacity: 0.5;
+}
 .active\:bg-gray-100:active {
 	--tw-bg-opacity: 1;
 	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
@@ -2549,6 +2583,10 @@ html {
 .active\:bg-gray-50:active {
 	--tw-bg-opacity: 1;
 	background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+.active\:bg-gray-900:active {
+	--tw-bg-opacity: 1;
+	background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 .active\:text-gray-700:active {
 	--tw-text-opacity: 1;
@@ -2689,6 +2727,10 @@ html {
 
 	.sm\:justify-start {
 		justify-content: flex-start;
+	}
+
+	.sm\:justify-center {
+		justify-content: center;
 	}
 
 	.sm\:justify-between {
