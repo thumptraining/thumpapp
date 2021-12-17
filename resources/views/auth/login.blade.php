@@ -1,12 +1,14 @@
 <x-guest-layout>
 
+    <x-validation-errors class="alert-toast fixed bottom-0 right-0 m-8 w-5/6 md:w-full max-w-sm" />
+
     <x-authentication-card>
 
         <x-slot name="logo">
             <x-authentication-card-logo />
         </x-slot>
 
-        <x-validation-errors class="mb-4" />
+        
 
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">

@@ -20,8 +20,11 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+
+        @livewire('components.alert.headalert')
+
     </head>
-    <body class="bg-zinc-900" x-data="setup()" x-init="$refs.loading.classList.add('hidden');" >
+    <body class="font-body bg-zinc-900" x-data="setup()" x-init="$refs.loading.classList.add('hidden');" >
         <div
             x-ref="loading"
             class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-gray-900"
