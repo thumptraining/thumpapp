@@ -955,6 +955,38 @@ html {
 .menu :where(li).disabled>a,.menu :where(li).disabled>span {
 	cursor: auto;
 }
+.modal {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	z-index: 999;
+	--tw-bg-opacity: 1;
+	--tw-bg-opacity: 0.4;
+	background-color: hsla(var(--nf)/var(--tw-bg-opacity,1));
+	transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+	transition-duration: .15s;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+@media (min-width:640px) {
+
+	.modal {
+		align-items: center;
+	}
+}
+.modal-open,.modal-toggle:checked+.modal,.modal:target {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
 .select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -1378,6 +1410,13 @@ html {
 .input-bordered {
 	--tw-border-opacity: 0.2;
 }
+.input-error {
+	--tw-border-opacity: 1;
+	border-color: hsla(var(--er)/var(--tw-border-opacity,1));
+}
+.input-error:focus {
+	box-shadow: 0 0 0 2px hsl(var(--b1)),0 0 0 4px hsl(var(--er));
+}
 .input-disabled,.input[disabled] {
 	--tw-bg-opacity: 1;
 	background-color: hsla(var(--b2)/var(--tw-bg-opacity,1));
@@ -1500,6 +1539,11 @@ html {
 	overflow: hidden;
 	border-radius: 40px;
 	margin-top: -25px;
+}
+.modal-open .modal-box,.modal-toggle:checked+.modal .modal-box,.modal:target .modal-box {
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	--tw-translate-y: 0px;
 }
 @-webkit-keyframes radiomark {
 
@@ -2845,6 +2889,10 @@ html {
 .hover\:text-white:hover {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.hover\:text-red-400:hover {
+	--tw-text-opacity: 1;
+	color: rgba(248, 113, 113, var(--tw-text-opacity));
 }
 .hover\:opacity-100:hover {
 	opacity: 1;

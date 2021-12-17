@@ -64,38 +64,32 @@
         <!-- MENU -->
 		<div class="sticky bottom-0 px-5 py-5 my-0  flex items-center justify-between bg-black shadow-3xl text-gray-400  cursor-pointer z-10">
 
-			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-					stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-						d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z">
-					</path>
-				</svg>
-			</div>
+            <!-- DASHBOARD -->
+            <a href="{{ route('dashboard') }}" class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z">
+                    </path>
+                </svg>
+            </a>
 
-			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-					stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-						d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-				</svg>
-			</div>
+            
+            <!-- PLAN -->
+            <a href="" class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  
+                </svg>
+            </a>
 
             <!-- PERFIL -->
 		
-            <a href="" class="flex flex-col items-center">
-                <img src="http://daisyui.com/tailwind-css-component-profile-1@56w.png" class="absolute bottom-5 shadow-2xl flex items-center justify-center rounded-full border-4 text-3xl border-gray-50 hover:border-gray-900 w-20 h-20 transition ease-in duration-200 "> 
+            <a href="{{ route('profile.show') }}" class="flex flex-col items-center">
+                <img src="{{ Auth::user()->profile_photo_url }}" class="absolute bottom-5 shadow-2xl flex items-center justify-center rounded-full border-4 text-3xl border-gray-50 hover:border-gray-900 w-20 h-20 transition ease-in duration-200 "> 
             </a>
 		
-
-			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-					stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-						d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
-				</svg>
-			</div>
-
+            <!-- DATOS -->
 			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
 					stroke="currentColor">
@@ -103,6 +97,13 @@
 						d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
 					</path>
 				</svg>
+			</div>
+
+            <!-- CERRAR -->
+			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-red-400 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
 			</div>
 
 		</div>
