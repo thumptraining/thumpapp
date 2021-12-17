@@ -62,7 +62,8 @@
 		</div>
 
         <!-- MENU -->
-		<div class="sticky bottom-0  p-5 px-6 mx-2 my-0  flex items-center justify-between bg-black shadow-3xl text-gray-400 rounded-2xl cursor-pointer z-10">
+		<div class="sticky bottom-0 px-5 py-5 mx-2 my-0  flex items-center justify-between bg-black shadow-3xl text-gray-400 rounded-2xl cursor-pointer z-10">
+
 			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
 					stroke="currentColor">
@@ -71,6 +72,7 @@
 					</path>
 				</svg>
 			</div>
+
 			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
 					stroke="currentColor">
@@ -93,6 +95,7 @@
 						d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
 				</svg>
 			</div>
+
 			<div class="flex flex-col items-center transition ease-in duration-200 hover:text-blue-400 ">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
 					stroke="currentColor">
@@ -101,6 +104,7 @@
 					</path>
 				</svg>
 			</div>
+
 		</div>
 
         @stack('modals')
