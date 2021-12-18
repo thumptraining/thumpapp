@@ -61,6 +61,30 @@
 			{{ $slot }}
 		</div>
 
+
+        <!-- MENU ENTRENADOR -->
+        <div class="sticky bottom-24 right-0  flex items-center justify-end ">      
+            <div class="dropdown dropdown-left dropdown-end ">
+                <div tabindex="0" class="btn btn-circle btn-lg mr-5 btn-primary">
+                    <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6 inline-block">
+                        <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601 C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399 C15.952,9,16,9.447,16,10z" />
+                    </svg>
+                </div> 
+
+                <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                        <a>Item 1</a>
+                    </li> 
+                    <li>
+                        <a>Item 2</a>
+                    </li> 
+                    <li>
+                        <a>Item 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <!-- MENU -->
 		<div class="sticky bottom-0 px-5 py-5 my-0  flex items-center justify-between bg-black shadow-3xl text-gray-400  cursor-pointer z-10">
 
@@ -109,8 +133,9 @@
                 </button>
             </form>
 
+            
 		</div>
-
+       
         @stack('modals')
 
         @livewireScripts
