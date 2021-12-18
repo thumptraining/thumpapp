@@ -1943,6 +1943,10 @@ html {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+.my-32 {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+}
 .ml-3 {
 	margin-left: 0.75rem;
 }
@@ -2778,6 +2782,9 @@ html {
 .uppercase {
 	text-transform: uppercase;
 }
+.capitalize {
+	text-transform: capitalize;
+}
 .leading-5 {
 	line-height: 1.25rem;
 }
@@ -2976,6 +2983,9 @@ html {
 .duration-300 {
 	transition-duration: 300ms;
 }
+.duration-100 {
+	transition-duration: 100ms;
+}
 .ease-in-out {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -3035,6 +3045,10 @@ html {
 .hover\:bg-red-700:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+}
+.hover\:bg-blue-500:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
 }
 .hover\:text-gray-500:hover {
 	--tw-text-opacity: 1;
